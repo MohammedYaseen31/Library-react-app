@@ -1,0 +1,128 @@
+.cartitems
+ {
+    width: 100%;
+    min-height: 100vh;
+    background: url('./../images/homepagebackground1.jpg');
+
+    & .header {
+        padding-top: 16vh;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 3vh;
+        transition: all .5s;
+        /* margin-top: 14vh; */
+        color: white;
+    }
+
+    & .header:hover {
+        text-shadow: 3px 3px 5px grey;
+        font-size: 3.5vh;
+    }
+
+    & .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        row-gap: 5vh;
+        padding-top: 4vh;
+
+        & .card {
+            width: 25vw;
+            border: 1px solid black;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3vh 1vw;
+            text-align: center;
+            box-shadow: inset 2px 2px 10px white;
+            border-radius: 10px;
+            line-height: 5vh;
+
+            & .image {
+                & img {
+                    height: 30vh;
+                    width: 50%;
+                }
+            }
+
+            & .title {
+                font-weight: bold;
+                color: white;
+                font-size: large;
+            }
+
+            & .authors {
+                color: rgba(255, 255, 255, 0.477);
+            }
+            & .pagecount{
+                color: rgba(255, 255, 255, 0.477);
+            }
+            .btns{
+                & .delete{
+                    padding: 2vh;
+                    border-radius: 6px;
+                    border: 2px solid grey;
+                    background: transparent;
+                    color: white;
+                    font-weight: bold;
+                    box-shadow: inset 5px 5px 10px grey;
+                }
+                & .delete:hover{
+                    box-shadow: 5px 5px 10px grey;
+                }
+            }
+        }
+    }
+}
+@media screen  and (max-width:925px){
+    .cartitems{
+        & .container{
+            display: grid;
+            grid-template-columns: auto auto;
+            & .card{
+                width: 35vw;
+            }
+        }
+    }
+    
+}
+@media screen  and (max-width:630px){
+    .cartitems{
+        & .header{
+            font-size: 3vw;
+        }
+        & .header:hover{
+            font-size: 3.5vw;
+        }
+        & .container{
+            display: grid;
+            grid-template-columns: auto;
+            & .card{
+                width: 50vw;
+            }
+        }
+    }
+    
+}
+@media screen  and (max-width:426px){
+    .cartitems{
+        & .container{
+            display: grid;
+            grid-template-columns: auto;
+            & .card{
+                width: 60vw;
+            }
+        }
+    }  
+}
+@media screen  and (max-width:350px){
+    .cartitems{
+        & .container{
+            display: grid;
+            grid-template-columns: auto;
+            & .card{
+                width: 75vw;
+            }
+        }
+    }  
+}

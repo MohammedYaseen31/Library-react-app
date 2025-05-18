@@ -1,0 +1,108 @@
+.users{
+    width: 100%;
+    min-height: 100vh;
+    background: url('./../images/homepagebackground1.jpg');
+    & .header{
+        padding-top: 16vh;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 3vh;
+        transition: all .5s;
+        /* margin-top: 14vh; */
+        color: white;
+    }
+    & .header:hover{
+        text-shadow: 3px 3px 5px grey;
+        font-size: 3.5vh;
+    }
+
+    & .container{
+        background: rgba(0, 0, 0, 0.7);
+        width: 90%;
+        margin: 4vh auto 0;
+        box-shadow: 10px 10px 10px grey;
+        border-radius: 8px;
+        border: 1px solid grey;
+        & table{
+            margin: 2vh auto;
+            width: 90%;
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+            text-align: center;
+            
+            & thead{
+                color: white;
+                & tr{
+                    & th{
+                        padding: 2vh 1vw;
+                    }
+                }
+            }
+            & tbody{
+                color: white;
+                & tr{
+                    & td{
+                        padding: 3vh;
+                        & button{
+                            color: white;
+                            background: none;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1105px){
+    .users{
+        & .container{
+            & table{
+                font-size: 1.2vw;
+            }
+        }
+    } 
+}
+@media screen and (max-width:915px){
+    .users{
+        & .container{
+            overflow-x: scroll;
+            & table{
+                font-size: 1.5vw;
+            }
+        }
+    } 
+}
+@media screen and (max-width:425px){
+    .users{
+        & .container{
+            overflow-x: scroll;
+            & table{
+                font-size: 2vw;
+            }
+        }
+    } 
+}
+@media screen and (max-width:375px){
+    .users{
+        & .container{
+            overflow-x: scroll;
+            & table{
+                font-size: 2.5vw;
+            }
+        }
+    } 
+}
+@media screen and (max-width:320px){
+    .users{
+        & .container{
+            overflow-x: scroll;
+            & table{
+                font-size: 3vw;
+            }
+        }
+    } 
+}

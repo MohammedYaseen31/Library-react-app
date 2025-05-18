@@ -1,0 +1,89 @@
+.viewuser{
+    width: 100%;
+    min-height: 100vh;
+    background: url('./../images/homepagebackground1.jpg');
+    & .header{
+        padding-top: 16vh;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 3vh;
+        transition: all .5s;
+        /* margin-top: 14vh; */
+        color: white;
+        
+    }
+    & .header:hover{
+        
+        text-shadow: 3px 3px 5px grey;
+        font-size: 3.5vh;
+    }
+
+    & .container{
+        width: 60%;
+        margin: 4vh auto;
+        /* min-height: 70vh; */
+        display: grid;
+        place-items: center;
+
+        & .card{
+            width: 35vw;
+            border: 1px solid black;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 3vh 1vw;
+            text-align: center;
+            box-shadow: inset 2px 2px 10px white;
+            border-radius: 10px;
+            line-height: 5vh;
+            color: white;
+            & .contact , .email , .password ,.dob , .age , .place{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2vh 6vh; 
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .viewuser{
+        & .container{
+            & .card{
+                width: 40vw;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:768px){
+    .viewuser{
+        & .container{
+            & .card{
+                width: 50vw;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:550px){
+    .viewuser{
+        & .container{
+            & .card{
+                width: 55vw;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:425px){
+    .viewuser{
+        & .container{
+            & .card{
+                width: 65vw;
+                font-size: 3.5vw;
+            }
+        }
+    }
+    
+}

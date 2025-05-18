@@ -1,0 +1,105 @@
+.homepage{
+    width: 100%;
+    min-height: 100vh;
+    background: url(./../images/homepagebackground1.jpg) center/cover;
+    background-repeat: repeat;
+    & .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .lefttext{
+            padding: 2vh;
+            margin-top: 7vw;
+            margin-left: 2vh;
+            width: 40%;
+            color: white;
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 2.8vh;
+            line-height: 8vh;
+            text-shadow: 2px 2px 5px grey;
+        }
+        & .righttext{
+            padding: 2vh;
+            margin-top: 24vw;
+            margin-right: 2vh;
+            width: 50%;
+            color:white;
+            font-weight: bolder;
+            font-size: 2.8vh;
+            font-style: italic;
+            line-height: 8vh;
+            text-shadow: 2px 2px 5px grey;
+            padding-right: 1vh;
+        }
+    }
+}
+
+@media screen and (max-width:974px){
+    .homepage{
+        & .container{
+            height: 100%;
+            & .lefttext{
+                font-size: 2vh;
+            }
+            & .righttext{
+                font-size: 2vh;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:768px){
+    .homepage{
+        & .container{
+            display: grid;
+            grid-template-columns: auto;
+            place-items: center;
+
+            & .lefttext{
+                width: 80%;
+                font-size: 2vh;
+                margin-top: 14vw;
+                margin-left: 0;
+            }
+            & .righttext{
+                width: 80%;
+                font-size: 2vh;
+                margin-top: 0;
+                margin-bottom: 10vw; 
+                margin-left: 1vh;
+                
+            }
+
+        }
+    }
+    
+}
+@media screen and (max-width:625px){
+    .homepage{
+        & .container{
+            display: grid;
+            grid-template-columns: auto;
+            place-items: center;
+
+            & .lefttext{
+                width: 80%;
+                font-size: 1.7vh;
+                margin-top: 14vh;
+                line-height: 4vh;
+            }
+            & .righttext{
+                width: 80%;
+                font-size: 1.7vh;
+                margin-top: 0;
+                margin-bottom: 10vw;
+                line-height: 4vh;
+            }
+
+        }
+    }
+    
+}

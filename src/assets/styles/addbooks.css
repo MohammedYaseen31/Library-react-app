@@ -1,0 +1,86 @@
+.addbooks{
+    background: url('./../images/homepagebackground1.jpg');
+    width: 100%;
+    min-height: 100vh;
+    & .header{
+        height: 6vh;
+        text-align: center;
+        padding: 17vh 0 1vh 0;
+        margin-bottom: 2vh;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 3vh;
+        transition: all .5s;
+    }
+    & .header:hover{
+        text-shadow: 3px 3px 5px grey;
+        font-size: 3.5vh;
+    }
+
+    & .container{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        & .formBox{
+            margin-top: 4vh;
+            width: 80%;
+            box-shadow: 10px 10px 10px grey;
+            border-radius: 8px;
+            border: 1px solid grey;
+
+            & form{
+                display: grid;
+                grid-template-columns: auto auto;
+                row-gap: 4vh;
+                padding: 6vh 0;
+                place-items: center;
+
+                & input , button{
+                    padding: 2vh 0;
+                }
+                
+
+                & input{
+                    width: 80%;
+                    box-shadow: 5px 5px 10px grey;
+                    border: none;
+                    border-radius: 8px;
+                    padding: 2vh;
+                }
+                & input::placeholder{
+                    font-weight: bold;
+                }
+
+
+                & button{
+                    width: 30%;
+                    border-radius: 8px;
+                    border: none;
+                    box-shadow: inset 5px 5px 10px grey;
+                    font-weight: bold;
+                }
+
+                & button:hover{
+                    box-shadow:5px 5px 10px grey;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .addbooks{
+        & .container{
+            & .formBox{
+                & form{
+                    display: grid;
+                    grid-template-columns: auto;
+                    place-items: center;
+                }
+            }
+        }
+    }
+    
+}
